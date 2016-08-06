@@ -15,10 +15,9 @@
     .logo {
       display: inline-block;
       width: 30%;
-      align-self: center;
-
+      padding-top: 31px;
       img {
-        height: 50px;
+        //height: 50px;
       }
     }
 
@@ -44,10 +43,11 @@
 
     @include mq(desktop) {
       display: inline-block;
-      height: 100px;
+      text-align: justify;
+      padding-top: 31px;
 
       img {
-        height: 80px;
+
       }
     }
 
