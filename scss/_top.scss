@@ -1,0 +1,45 @@
+.top {
+  line-height: 115px;
+  .logo {
+    float: left;
+  }
+
+  .menu-mobile {
+    line-height: 115px;
+    float: right;
+
+    i {
+      font-size: 32px;
+      color: $headers;
+    }
+
+    @include mq(desktop) {
+      display: none;
+    }
+
+  }
+
+  .menu {
+    float: right;
+    display: none;
+
+    @include mq(desktop) {
+      display: block;
+    }
+
+    ul {
+
+      li {
+        display: inline-block;
+        padding: 0 30px;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $headers;
+
+        }
+      }
+    }
+  }
+}

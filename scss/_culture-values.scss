@@ -1,0 +1,60 @@
+.culture-values {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+
+  @include mq(tablet) {
+    padding: 100px 0;
+  }
+
+  .boxes-culture {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(tablet) {
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .box {
+      position: relative;
+      margin: 40px 0;
+
+      @include mq(tablet) {
+        margin: 0 25px;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        font-size: 18px;
+        margin: 20px 0 10px;
+
+        @include mq(tablet){
+        margin: 40px 0 20px 0;
+        }
+      }
+
+      p {
+        color: $headers;
+      }
+
+      &::after {
+        display: none;
+
+        @include mq(tablet) {
+          display: block;
+          content: ' ';
+          width: 170px;
+          border-bottom: 2px solid #777777;
+          position: absolute;
+          top: 19%;
+          left: 78%;
+        }
+      }
+    }
+
+    .hr::after {
+      display: none;
+    }
+  }
+}

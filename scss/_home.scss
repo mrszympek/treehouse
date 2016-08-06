@@ -1,0 +1,46 @@
+.home {
+  position: relative;
+  clear: both;
+  background: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  height: 530px;
+
+  .content {
+    position: relative;
+    z-index: 30;
+    text-align: center;
+    padding: 70px 0;
+
+    @include mq(desktop) {
+      padding: 100px 20%;
+
+    }
+    h1 {
+      font-size: 48px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding-bottom: 40px;
+
+      @include mq(desktop) {
+        font-size: 60px;
+      }
+    }
+
+    h3 {
+      padding-bottom: 60px;
+      color: $headers
+    }
+    a {
+      padding: 25px;
+      border-radius: 100px;
+      background-color: #21a603;
+      width: 200px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+}

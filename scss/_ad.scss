@@ -1,0 +1,96 @@
+.ad {
+  height: 100%;
+
+  @include mq(desktop) {
+    height: 616px;
+  }
+
+  .left {
+    display: none;
+
+    @include mq(desktop) {
+      display: block;
+      position: relative;
+      height: 616px;
+      width: 30%;
+      background-color: #e9e9e9;
+      float: left;
+    }
+
+    img {
+      position: absolute;
+      top: calc(50% - 204px);
+      right: calc(0px - 187px);
+    }
+  }
+
+  .right {
+    position: relative;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    z-index: 2;
+
+    @include mq(desktop) {
+      float: right;
+      height: 616px;
+      width: 70%;
+
+    }
+
+    .container {
+      padding: 50px 38px;
+      position: relative;
+      z-index: 44;
+
+      @include mq(desktop) {
+        padding: 100px 230px 100px 90px;
+      }
+
+      h2 {
+        color: white;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+
+      span {
+        color: #21a603;
+      }
+
+      p {
+        padding: 45px 0 20px;
+        color: $headers;
+      }
+
+      ul {
+        list-style: none;
+        li {
+          line-height: 32px;
+          color: $headers;
+          font-size: 16px;
+
+          img {
+            padding-right: 15px;
+          }
+        }
+      }
+
+      .button {
+        margin: 60px 0 20px;
+
+        @include mq(desktop) {
+          margin: 80px 0 100px 0;
+        }
+        a {
+          padding: 25px;
+          border-radius: 100px;
+          background-color: #21a603;
+          width: 200px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+}

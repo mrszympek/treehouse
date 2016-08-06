@@ -1,0 +1,63 @@
+.last-projects {
+  margin: 50px 0;
+  @include mq(desktop) {
+    margin: 100px 0;
+  }
+  .develop-left {
+
+    @include mq(desktop) {
+      width: 50%;
+
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      padding-bottom: 15px;
+    }
+
+    p {
+      color: $headers;
+    }
+
+    ul {
+      padding: 20px 0;
+      list-style-type: none;
+      li {
+        padding: 20px 0;
+        img {
+          float: left;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .view-details {
+      margin-top: 40px;
+      a {
+        text-decoration: none;
+        color: $green;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .ipad-right {
+    display: none;
+    @include mq(desktop) {
+      display: block;
+    }
+    position: relative;
+    float: right;
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: -100px;
+
+    }
+  }
+}
