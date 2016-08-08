@@ -1,13 +1,15 @@
 .last-projects {
-  margin: 50px 0;
+  padding: 80px 0;
+
   @include mq(desktop) {
-    margin: 100px 0;
+    padding: 100px 0;
   }
+
+
   .develop-left {
 
     @include mq(desktop) {
       width: 50%;
-
     }
 
     h3 {

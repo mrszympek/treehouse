@@ -1,17 +1,19 @@
 
 .top {
-  height: 80px;
   position: fixed;
   z-index: 200;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #cccccc;
 
+  @include mq(desktop) {
+    height: 80px;
+  }
+
   .logo {
     float: left;
     margin: 18px 4%;
     @include mq(desktop) {
-
       margin: 23px 7%;
     }
 
@@ -41,11 +43,11 @@
     background-color: white;
 
     @include mq(desktop) {
+      clear: inherit;
       display: inline-block;
       float: right;
       line-height: 80px;
-      clear: inherit;
-      margin: 0 7%;
+      margin-right: 10%;
     }
 
     ul {

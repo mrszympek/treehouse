@@ -1,8 +1,8 @@
 .services {
-  margin: 50px 0;
+  padding-top: 70px;
 
   @include mq(tablet) {
-    margin: 100px 0;
+    padding: 100px 0;
   }
 
   .boxes {

@@ -37,14 +37,16 @@
         list-style: none;
         padding: 10px 0;
 
-        i {
-          display: inline-block;
-        }
-
         p {
           font-weight: 200;
           font-size: 16px;
           display: inline-block;
+        }
+
+        p::before{
+          content: "\f1ea";
+          font-family: FontAwesome;
+          padding-right: 5px;
         }
       }
     }
@@ -71,14 +73,16 @@
         list-style: none;
         padding: 10px 0;
 
-        i {
-          display: inline-block;
-        }
-
         p {
           font-weight: 200;
           font-size: 16px;
           display: inline-block;
+        }
+
+        p::before{
+          content: '\f099';
+          font-family: FontAwesome;
+          padding-right: 2px;
         }
       }
     }
