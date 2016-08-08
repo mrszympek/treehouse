@@ -1,66 +1,51 @@
-.top {
 
-  @include mq(desktop) {
-    padding: 0 7%;
+.top {
+  height: 70px;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #cccccc;
+
+  .logo {
+    float: left;
+    margin: 18px 4%;
+    @include mq(desktop) {
+
+      margin: 23px 7%;
+    }
+
+    img {
+      height: 30px;
+    }
   }
-  .header {
-    height: 100px;
-    padding: 0 20px;
+
+  .menu-icon {
+    float: right;
+    margin: 20px 4%;
 
     @include mq(desktop) {
       display: none;
-      padding: 0;
     }
 
-    .logo {
-      display: inline-block;
-      width: 30%;
-      padding-top: 31px;
-      img {
-        //height: 50px;
-      }
-    }
-
-    .menu-icon {
-      display: inline-block;
-      float: right;
-
-      @include mq(desktop) {
-        display: none;
-      }
-
-      i {
-        line-height: 100px;
-        font-size: 32px;
-        color: #cccccc;
-      }
-    }
-  }
-
-  .logo1 {
-
-    display: none;
-
-    @include mq(desktop) {
-      display: inline-block;
-      text-align: justify;
-      padding-top: 31px;
-
-      img {
-
-      }
+    i {
+      font-size: 30px;
     }
 
   }
 
   .menu {
+    clear: both;
     text-align: center;
     display: none;
+    background-color: white;
 
     @include mq(desktop) {
       display: inline-block;
       float: right;
-      line-height: 100px;
+      line-height: 80px;
+      clear: inherit;
+      margin: 0 7%;
     }
 
     ul {
