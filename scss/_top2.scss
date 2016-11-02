@@ -1,5 +1,7 @@
 
 .top {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   z-index: 200;
   width: 100%;
@@ -11,7 +13,6 @@
   }
 
   .logo {
-    float: left;
     margin: 18px 4%;
     @include mq(desktop) {
       margin: 23px 7%;
@@ -23,7 +24,6 @@
   }
 
   .menu-icon {
-    float: right;
     margin: 20px 4%;
 
     @include mq(desktop) {
